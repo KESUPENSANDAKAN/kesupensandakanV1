@@ -1,3 +1,0 @@
-const toggle=document.querySelector(".menu-toggle");const nav=document.querySelector(".nav");
-if(toggle&&nav){toggle.addEventListener("click",()=>{nav.style.display=nav.style.display==="flex"?"none":"flex";if(nav.style.display==="flex"){nav.style.position="absolute";nav.style.top="74px";nav.style.left="0";nav.style.right="0";nav.style.padding="20px";nav.style.background="#071b2b";nav.style.flexDirection="column"}})}
-document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const f=btn.dataset.filter;document.querySelectorAll(".program-card").forEach(card=>card.classList.toggle("hide",f!=="all"&&card.dataset.status!==f))}));
